@@ -1,0 +1,61 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 8px 16px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .searchBox {
+        display: flex;
+        align-items: center;
+
+        & .searchInp {
+            width: 515px;
+            padding: 8px 4px 9px 17px;
+            border-radius: 40px 0px 0px 40px;
+            border-top: 1px solid #CCC;
+            border-bottom: 1px solid #CCC;
+            border-left: 1px solid #CCC;
+            background: #FFF;
+            box-shadow: 0.25px 1.25px 2px 0.75px #EEE inset;
+
+            & input {
+                color: #888;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+
+                & ::placeholder {
+                    color: #888;
+                }
+            }
+        }
+
+        & .searchBtn {
+            padding: 8px 20px;
+            border-radius: 0 40px 40px 0;
+            border: 1px solid #D3D3D3;
+            background: #F8F8F8;
+        }
+
+        & .microphoneBtn {
+            display: grid;
+            place-content: center;
+            padding: 8px;
+            border-radius: 100px;
+            background: rgba(0, 0, 0, 0.05);
+
+            & .bxs-microphone {
+                font-size: 24px;
+            }
+        }
+    }
+}
