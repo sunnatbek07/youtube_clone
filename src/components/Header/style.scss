@@ -46,15 +46,40 @@ header {
             background: #F8F8F8;
         }
 
-        & .microphoneBtn {
-            display: grid;
-            place-content: center;
-            padding: 8px;
-            border-radius: 100px;
-            background: rgba(0, 0, 0, 0.05);
+    }
 
-            & .bxs-microphone {
-                font-size: 24px;
+    & .microphoneBtn {
+        display: grid;
+        place-content: center;
+        padding: 8px;
+        border-radius: 100px;
+        background: rgba(0, 0, 0, 0.05);
+
+        & .bxs-microphone {
+            font-size: 24px;
+        }
+    }
+
+    & .settings {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+
+        & button {
+            display: flex;
+            align-items: center;
+            column-gap: 6px;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            padding: 0 16px 0 10px;
+
+            & span {
+                color: #065FD4;
+                font-family: "Roboto Medium";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36px;
             }
         }
     }
