@@ -1,12 +1,11 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Sidebar from '../../components/Sidebar'
+import HomeTabs from '../../components/Ui/HomePageTabs'
 
 const Home = () => {
     return (
         <>
             <section>
-
+                <HomeTabs />
             </section>
         </>
     )

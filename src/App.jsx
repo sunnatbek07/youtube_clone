@@ -9,7 +9,9 @@ function App() {
       <Sidebar />
       <div>
         <Header />
-        <Outlet />
+        <main className="mt-[59px] ml-[252px]">
+          <Outlet />
+        </main>
       </div>
     </div>
   )

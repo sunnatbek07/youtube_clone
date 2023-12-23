@@ -1,0 +1,41 @@
+.tabs {
+    // position: fixed;
+    top: 59px;
+    min-width: 100%;
+    padding: 12px 24px;
+
+    .tab-list {
+        overflow-x: scroll;
+        list-style: none;
+        display: flex;
+        padding-bottom: 5px;
+        column-gap: 16px;
+        border-radius: 8px;
+
+        & li {
+            min-width: fit-content;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            padding: 6px 12px;
+            background: rgba(0, 0, 0, 0.05);
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        & li.active-tab {
+            background: #0F0F0F;
+            color: #FFFFFF;
+        }
+
+        .tab-content {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+    }
+
+
+}

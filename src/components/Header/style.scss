@@ -6,6 +6,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #FFF;
 
     & .searchBox {
         display: flex;
@@ -24,6 +25,7 @@ header {
             & input {
                 color: #888;
                 font-size: 16px;
+                font-family: 'Roboto Regular';
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -56,7 +58,7 @@ header {
         background: rgba(0, 0, 0, 0.05);
 
         & .bxs-microphone {
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 
