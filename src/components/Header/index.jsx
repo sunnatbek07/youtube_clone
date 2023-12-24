@@ -4,6 +4,7 @@ import Search from './../Icons/Search';
 import { Link } from 'react-router-dom';
 import './style.scss';
 import SignIn from './../Icons/SignIn';
+import HomeTabs from '../Ui/HomePageTabs';
 
 const Header = () => {
     return (
@@ -23,6 +24,9 @@ const Header = () => {
                         <Search />
                     </button>
                 </div>
+                <button className='searchBtn2'>
+                    <Search />
+                </button>
                 <button className='microphoneBtn'>
                     <i className='bx bxs-microphone'></i>
                 </button>

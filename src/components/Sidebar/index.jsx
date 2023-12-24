@@ -5,7 +5,7 @@ import SignIn from '../Icons/SignIn';
 
 const Sidebar = () => {
     return (
-        <aside className=''>
+        <aside>
             <div className='max-w-[240px]'>
                 <nav>
                     <ul className='nav'>

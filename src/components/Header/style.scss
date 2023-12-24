@@ -13,7 +13,7 @@ header {
         align-items: center;
 
         & .searchInp {
-            width: 515px;
+            max-width: 515px;
             padding: 8px 4px 9px 17px;
             border-radius: 40px 0px 0px 40px;
             border-top: 1px solid #CCC;
@@ -29,7 +29,7 @@ header {
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                width: 100%;
+                width: 515px;
 
                 &:focus {
                     outline: none;
@@ -47,7 +47,11 @@ header {
             border: 1px solid #D3D3D3;
             background: #F8F8F8;
         }
+    }
 
+    & .searchBtn2 {
+        display: none;
+        padding: 8px;
     }
 
     & .microphoneBtn {
@@ -83,6 +87,36 @@ header {
                 font-weight: 500;
                 line-height: 36px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    header {
+
+        & .searchBox {
+
+            & .searchInp {
+
+                & input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        header {
+            & .searchBox {
+                display: none;
+                align-items: center;
+            }
+
+            & .searchBtn2 {
+                display: flex;
+                padding: 8px;
+            }
+            
         }
     }
 }

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './style.scss';
-import { Tab, Tabs } from '@mui/material';
 
 const HomeTabs = () => {
     const tabItems = ['All', 'Live', 'Music', 'Gaming', 'Background Music', 'Game Shows', 'Camping', 'Crismats decorations', 'Quarterbacks', 'Comedy', 'Action-adventure game', 'Pop Music', 'Recently uploaded'];
@@ -23,9 +22,9 @@ const HomeTabs = () => {
                     </li>
                 ))}
             </ul>
-            <div className="tab-content">
+            {/* <div className="tab-content">
                 {tabItems[activeTab]}
-            </div>
+            </div> */}
         </div>
     )
 }
