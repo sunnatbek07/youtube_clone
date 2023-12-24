@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import HomeTabs from '../../components/Ui/HomePageTabs';
 import './style.scss';
 import useVideoApi from '../../service/Video/getVideoApi';
+import VideoCard from '../../components/Ui/HomeCard';
 
 const Home = () => {
     const [videos, setVideos] = useState([]);
@@ -16,21 +17,12 @@ const Home = () => {
 
     return (
         <>
-            <section>
+            <section className='home'>
                 <HomeTabs />
                 <div className='videoWrapper'>
                     {
-                        videos.map((item, id) => {
-                            return <li key={id}>
-                                <iframe 
-                                    src={`https://www.youtube.com/embed/${item.id}`}
-                                    frameborder="0"
-                                    width="360"
-                                    height="210"
-                                    allowFullScreen={true}
-                                >
-                                </iframe>
-                            </li>
+                        videos.map((item, index) => {
+                            return <VideoCard key={index} state={item} />
                         })
                     }
                 </div>

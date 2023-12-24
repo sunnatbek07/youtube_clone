@@ -17,6 +17,11 @@
     src: url(./assets/Fonts/Roboto-Bold.ttf);
 }
 
+
+.rfont {
+    font-family: "Roboto Bold";
+}
+
 ::-webkit-scrollbar {
     height: 5px;
     border-radius: 2px;
@@ -27,7 +32,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.05);
 }
 
 ::-webkit-scrollbar-thumb:hover {

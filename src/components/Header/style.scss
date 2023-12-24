@@ -46,12 +46,20 @@ header {
             border-radius: 0 40px 40px 0;
             border: 1px solid #D3D3D3;
             background: #F8F8F8;
+
+            &:hover {
+                background: #f8f8f856;
+            }
         }
     }
 
     & .searchBtn2 {
         display: none;
         padding: 8px;
+
+        &:hover {
+            background: #f8f8f856;
+        }
     }
 
     & .microphoneBtn {
@@ -60,6 +68,11 @@ header {
         padding: 8px;
         border-radius: 100px;
         background: rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.10);
+            transition: all 0.1s ease;
+        }
 
         & .bxs-microphone {
             font-size: 20px;
@@ -78,6 +91,7 @@ header {
             border-radius: 18px;
             border: 1px solid rgba(0, 0, 0, 0.10);
             padding: 0 16px 0 10px;
+            min-width: fit-content;
 
             & span {
                 color: #065FD4;
@@ -91,7 +105,15 @@ header {
     }
 }
 
+.MuiButtonBase-root:nth-child(2) {
+    display: none !important;
+}
+
 @media only screen and (max-width: 960px) {
+    .MuiButtonBase-root {
+        border: none !important;
+    }
+
     header {
 
         & .searchBox {
@@ -105,18 +127,47 @@ header {
         }
     }
 
-    @media only screen and (max-width: 650px) {
-        header {
-            & .searchBox {
+}
+
+@media only screen and (max-width: 650px) {
+    header {
+        & .searchBox {
+            display: none;
+            align-items: center;
+        }
+
+        & .searchBtn2 {
+            display: flex;
+            padding: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    header {
+        & .settings {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            & button {
                 display: none;
                 align-items: center;
-            }
+                column-gap: 6px;
+                border-radius: 18px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                padding: 0 16px 0 10px;
+                min-width: fit-content;
 
-            & .searchBtn2 {
-                display: flex;
-                padding: 8px;
+                & span {
+                    color: #065FD4;
+                    font-family: "Roboto Medium";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 36px;
+                }
             }
-            
         }
     }
 }

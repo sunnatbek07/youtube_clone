@@ -4,124 +4,125 @@ aside {
     background: #FFF;
     overflow-y: scroll;
 
-    & nav {
+}
 
-        & .nav,
-        .nav2 {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
-            padding: 12px 24px 13px 12px;
+nav {
 
-            & a {
-                display: flex;
-                align-items: center;
-                width: 204px;
-                height: 40px;
-                padding: 8px 12px;
-                gap: 24px;
-                border-radius: 10px;
-                color: #0F0F0F;
-                font-family: "Roboto Regular";
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 20px;
+    & .nav,
+    .nav2 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+        padding: 12px 24px 13px 12px;
 
-                &:hover {
-                    background: rgba(0, 0, 0, 0.05);
-                }
+        & a {
+            display: flex;
+            align-items: center;
+            width: 204px;
+            height: 40px;
+            padding: 8px 12px;
+            gap: 24px;
+            border-radius: 10px;
+            color: #0F0F0F;
+            font-family: "Roboto Regular";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.05);
             }
         }
+    }
 
-        & .nav3 {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
-            padding: 18px 50.88px 17px 32px;
+    & .nav3 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+        padding: 18px 50.88px 17px 32px;
 
-            & p {
-                color: #0F0F0F;
-                font-family: "Roboto Regular";
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 20px;
-                margin-bottom: 14px;
-            }
-
-            & button {
-                display: flex;
-                align-items: center;
-                column-gap: 6px;
-                border-radius: 18px;
-                border: 1px solid rgba(0, 0, 0, 0.10);
-                padding: 0 16px 0 10px;
-
-                & span {
-                    color: #065FD4;
-                    font-family: "Roboto Medium";
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 36px;
-                }
-            }
+        & p {
+            color: #0F0F0F;
+            font-family: "Roboto Regular";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 14px;
         }
 
-        & .explore {
-            padding: 12px 12px 13px 12px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+        & button {
+            display: flex;
+            align-items: center;
+            column-gap: 6px;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            padding: 0 16px 0 10px;
 
-            & h4 {
-                padding: 7px 150.276px 6px 12px;
-                color: #0F0F0F;
+            & span {
+                color: #065FD4;
                 font-family: "Roboto Medium";
-                font-size: 16px;
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 22px;
-            }
-
-            & a {
-                display: flex;
-                align-items: center;
-                width: 204px;
-                height: 40px;
-                padding: 8px 12px;
-                gap: 24px;
-                border-radius: 10px;
-                color: #0F0F0F;
-                font-family: "Roboto Regular";
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 20px;
-
-                &:hover {
-                    background: rgba(0, 0, 0, 0.05);
-                }
+                line-height: 36px;
             }
         }
+    }
 
-        & .browse {
-            padding: 12px 12px 13px 12px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    & .explore {
+        padding: 12px 12px 13px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 
-            & a {
-                display: flex;
-                align-items: center;
-                width: 204px;
-                height: 40px;
-                padding: 8px 12px;
-                gap: 24px;
-                border-radius: 10px;
-                color: #0F0F0F;
-                font-family: "Roboto Regular";
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 20px;
+        & h4 {
+            padding: 7px 150.276px 6px 12px;
+            color: #0F0F0F;
+            font-family: "Roboto Medium";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+        }
 
-                &:hover {
-                    background: rgba(0, 0, 0, 0.05);
-                }
+        & button, a {
+            display: flex;
+            align-items: center;
+            width: 204px;
+            height: 40px;
+            padding: 8px 12px;
+            gap: 24px;
+            border-radius: 10px;
+            color: #0F0F0F;
+            font-family: "Roboto Regular";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+
+    & .browse {
+        padding: 12px 12px 13px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
+        & button {
+            display: flex;
+            align-items: center;
+            width: 204px;
+            height: 40px;
+            padding: 8px 12px;
+            gap: 24px;
+            border-radius: 10px;
+            color: #0F0F0F;
+            font-family: "Roboto Regular";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.05);
             }
         }
     }
@@ -146,7 +147,7 @@ aside {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.10);
                 padding: 12px 24px 13px 12px;
 
-                & a {
+                & button {
                     display: flex;
                     align-items: center;
                     width: 204px;
@@ -216,7 +217,7 @@ aside {
                     line-height: 22px;
                 }
 
-                & a {
+                & button {
                     display: flex;
                     align-items: center;
                     width: 204px;
@@ -262,5 +263,11 @@ aside {
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    aside {
+        display: none;
     }
 }

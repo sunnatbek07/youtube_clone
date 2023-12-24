@@ -8,13 +8,13 @@ function App() {
   const aside = useState(true)
 
   return (
-    <div className="flex min-w-full">
+    <div className="flex min-w-full app">
       {
         aside ? <Sidebar /> : <ResponsiveSidebar />
       }
       <div>
         <Header />
-        <main className=" ml-20 mt-[59px] lg:ml-[260px]">
+        <main className=" m-0 md:ml-20 mt-[59px] lg:ml-[260px]">
           <Outlet />
         </main>
       </div>
