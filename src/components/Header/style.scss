@@ -110,6 +110,10 @@ header {
 }
 
 @media only screen and (max-width: 960px) {
+    .MuiButtonBase-root:nth-child(2) {
+        display: flex !important;
+    }
+
     .MuiButtonBase-root {
         border: none !important;
     }
